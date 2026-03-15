@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OpenionBD Survey Router</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function routeSurvey() {
+      // 50% chance success
+      const chance = Math.random();
+      if (chance <= 0.5) {
+        // Randomly pick one of the four surveys
+        const surveys = [
+          "https://samplicio-us-ai.github.io/Router.aspx/survey/selfserve/1b/1003/index.html",
+          "https://samplicio-us-ai.github.io/Router.aspx/survey/selfserve/1b/1006/",
+          "https://samplicio-us-ai.github.io/Router.aspx/survey/selfserve/1b/1002/survey",
+          "https://samplicio-us-ai.github.io/Router.aspx/survey/selfserve/1b/"
+        ];
+        const chosen = surveys[Math.floor(Math.random() * surveys.length)];
+        window.location.href = chosen;
+      } else {
+        // Redirect to fail.html with countdown
+        let countdown = 5; // seconds
+        document.getElementById("message").innerHTML =
+          "Screening failed. Redirecting in " + countdown + " seconds...";
+        const timer = setInterval(() => {
+          countdown--;
+          document.getElementById("message").innerHTML =
+            "Screening failed. Redirecting in " + countdown + " seconds...";
+          if (countdown <= 0) {
+            clearInterval(timer);
+            window.location.href =
+              "https://screeningopenionbd.github.io/Screening.aspx.mysurveyvzRouting-01/fail.html";
+          }
+        }, 1000);
+      }
+    }
+  </script>
+</head>
+<body>
+  <main>
+    <h2>Welcome to OpenionBD Surveys</h2>
+    <p id="message">Click below to try your luck!</p>
+    <button onclick="routeSurvey()" class="survey-btn">Start</button>
+  </main>
+</body>
+</html>
