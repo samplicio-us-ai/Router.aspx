@@ -2,14 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Beautiful Survey</title>
+  <title>Survey - Page 1</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <h1>Welcome to Our Survey</h1>
-    <p>We value your feedback. Click below to begin.</p>
-    <a href="page1.html" class="btn">Start Survey</a>
+    <h2>Page 1: General Information</h2>
+    <form action="page2.html" method="get">
+      <label>Name:</label>
+      <input type="text" name="name" required>
+      
+      <label>Age:</label>
+      <input type="number" name="age" required>
+      
+      <button type="submit" class="btn">Next</button>
+    </form>
   </div>
 </body>
 </html>
