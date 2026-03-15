@@ -7,15 +7,16 @@
 </head>
 <body>
   <div class="container">
-    <h2>Page 1: General Information</h2>
+    <h2>Step 1: Tell Us About You</h2>
     <form action="page2.html" method="get">
-      <label>Name:</label>
-      <input type="text" name="name" required>
-      
-      <label>Age:</label>
-      <input type="number" name="age" required>
-      
-      <button type="submit" class="btn">Next</button>
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+
+      <div class="progress">Progress: 33%</div>
+      <button type="submit" class="btn">Next ➡️</button>
     </form>
   </div>
 </body>
