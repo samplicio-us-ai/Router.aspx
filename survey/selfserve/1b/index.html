@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Community Survey</title>
+
+<style>
+body{
+font-family: Arial, sans-serif;
+background:#f5f7fb;
+margin:0;
+padding:0;
+}
+
+.container{
+max-width:800px;
+margin:40px auto;
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+h1{
+text-align:center;
+color:#333;
+}
+
+.section{
+margin-top:30px;
+}
+
+.question{
+margin:15px 0;
+}
+
+input[type="text"], textarea{
+width:100%;
+padding:10px;
+border-radius:6px;
+border:1px solid #ccc;
+margin-top:5px;
+}
+
+textarea{
+height:80px;
+}
+
+.note{
+background:#fff3cd;
+padding:12px;
+border-radius:6px;
+margin-bottom:20px;
+}
+
+footer{
+text-align:center;
+margin-top:30px;
+color:#777;
+font-size:14px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>Community Feedback Survey</h1>
+
+<div class="note">
+This survey is displayed for documentation or research purposes.  
+Responses are <b>NOT collected automatically</b>.
+</div>
+
+<div class="section">
+<h2>1. Participant Information</h2>
+
+<div class="question">
+Name (optional)
+<input type="text">
+</div>
+
+<div class="question">
+Country
+<input type="text">
+</div>
+
+<div class="question">
+Experience Level
+<br>
+<label><input type="radio" name="exp"> Beginner</label><br>
+<label><input type="radio" name="exp"> Intermediate</label><br>
+<label><input type="radio" name="exp"> Advanced</label><br>
+<label><input type="radio" name="exp"> Expert</label>
+</div>
+</div>
+
+<div class="section">
+<h2>2. Project Usage</h2>
+
+<div class="question">
+How did you find this project?
+<br>
+<label><input type="checkbox"> GitHub</label><br>
+<label><input type="checkbox"> Social Media</label><br>
+<label><input type="checkbox"> Search Engine</label><br>
+<label><input type="checkbox"> Friend</label>
+</div>
+
+<div class="question">
+How often do you use this project?
+<br>
+<label><input type="radio" name="use"> Daily</label><br>
+<label><input type="radio" name="use"> Weekly</label><br>
+<label><input type="radio" name="use"> Monthly</label><br>
+<label><input type="radio" name="use"> Rarely</label>
+</div>
+</div>
+
+<div class="section">
+<h2>3. Feedback</h2>
+
+<div class="question">
+What do you like most about the project?
+<textarea></textarea>
+</div>
+
+<div class="question">
+What improvements would you suggest?
+<textarea></textarea>
+</div>
+</div>
+
+<div class="section">
+<h2>4. Overall Satisfaction</h2>
+
+<div class="question">
+How satisfied are you overall?
+<br>
+<label><input type="radio" name="sat"> Very satisfied</label><br>
+<label><input type="radio" name="sat"> Satisfied</label><br>
+<label><input type="radio" name="sat"> Neutral</label><br>
+<label><input type="radio" name="sat"> Unsatisfied</label>
+</div>
+</div>
+
+<footer>
+Survey Template • Hosted via GitHub Pages
+</footer>
+
+</div>
+
+</body>
+</html>
