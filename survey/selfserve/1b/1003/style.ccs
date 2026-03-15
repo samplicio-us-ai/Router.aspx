@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0fdf4;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+h1, h2 {
+  color: #2f855a;
+}
+label {
+  display: block;
+  margin: 15px 0 5px;
+}
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+}
+.btn {
+  background: #38a169;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.btn:hover {
+  background: #2f855a;
+}
