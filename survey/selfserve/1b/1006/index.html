@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Demo Survey</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; }
+    h1 { color: #2c7a7b; }
+    .question { margin-bottom: 20px; }
+    button { background: #2c7a7b; color: white; padding: 10px 20px; border: none; cursor: not-allowed; }
+  </style>
+</head>
+<body>
+  <h1>Sample Survey (No Responses Collected)</h1>
+  <form onsubmit="return false;">
+    <div class="question">
+      <label>1. How satisfied are you with our service?</label><br>
+      <input type="radio" name="q1"> Very satisfied<br>
+      <input type="radio" name="q1"> Satisfied<br>
+      <input type="radio" name="q1"> Neutral<br>
+      <input type="radio" name="q1"> Dissatisfied<br>
+    </div>
+    <div class="question">
+      <label>2. Any comments?</label><br>
+      <textarea rows="4" cols="40"></textarea>
+    </div>
+    <button type="submit">Submit (Disabled)</button>
+  </form>
+</body>
+</html>
