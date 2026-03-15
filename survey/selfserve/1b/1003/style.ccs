@@ -1,16 +1,17 @@
 body {
-  font-family: Arial, sans-serif;
-  background: #f0fdf4;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #e6fffa, #f0fff4);
   margin: 0;
   padding: 0;
 }
 .container {
   max-width: 600px;
-  margin: 50px auto;
-  background: white;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin: 60px auto;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  text-align: center;
 }
 h1, h2 {
   color: #2f855a;
@@ -18,19 +19,29 @@ h1, h2 {
 label {
   display: block;
   margin: 15px 0 5px;
+  text-align: left;
 }
 input, select {
   width: 100%;
-  padding: 8px;
-  margin-bottom: 15px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #c6f6d5;
+  border-radius: 6px;
 }
 .btn {
   background: #38a169;
   color: white;
-  padding: 10px 20px;
+  padding: 12px 25px;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s ease;
 }
 .btn:hover {
   background: #2f855a;
+}
+.progress {
+  margin: 20px 0;
+  font-size: 14px;
+  color: #718096;
 }
